@@ -76,61 +76,61 @@ The following operations are required for self-service.
 
 Operations related to **security** are as follow:
 
-* **Login                    	**Gain access to the self-service environment
+* **Login** 		- Gain access to the self-service environment
 
-* **Logout                 	**End the self-service session
+* **Logout**            - End the self-service session
 
 Operations related to **cloning** guests are as follow:
 
-* **Build                     	**Create new guest(s) in new virtual machine(s)
+* **Build**             - Create new guest(s) in new virtual machine(s)
 
-* **Rebuild                	**Replace Linux OS and data in existing virtual machine(s)
+* **Rebuild**           - Replace Linux OS and data in existing virtual machine(s)
 
-* **Disable		**Disable guest; not usable/startable (resources remain)
+* **Disable**           - Disable guest; not usable/startable (resources remain)
 
-* **Purge                   	**Actually delete a destroyed system (admins only)
+* **Purge**		- Actually delete a destroyed system (admins only)
 
-Operations related to **recycling **guests are as follow:
+Operations related to **recycling** guests are as follow:
 
-* **Power on            	**Boot powered-down guest
+* **Power on**		- Boot powered-down guest
 
-* **Power off           	**Shut down running guests (soft/hard down)
+* **Power off**		- Shut down running guests (soft/hard down)
 
-* **Reboot (hard)   	**Shut down, log off, log on then boot guests
+* **Reboot (hard)**	- Shut down, log off, log on then boot guests
 
-* **Reboot (soft)     	**Recycle guests without a z/VM logoff
+* **Reboot (soft)**	- Recycle guests without a z/VM logoff
 
-* **Stop                     	**Freeze all CPUs (administrators only)  maybe not
+* **Stop**		- Freeze all CPUs (administrators only)  maybe not
 
-* **Start                    	**Resume frozen guests (administrators only)   maybe not
+* **Start**		- Resume frozen guests (administrators only)   maybe not
 
 Operations to **configuring** guests are as follow. These operations will correspondingly add to or detract from the group’s quotas.
 
 JSV NOTES:  Add/Remove CPU and MEMORY could easily be ONE API each.  For instance, a call with "Modify_CPU" and CPUs=n or CPUs=+n or CPUS=-n.  Without +/- the cloud-host would deterime if it is adding or removing CPUs
 
-* **Add CPUs            	**Dynamically add CPUs to guests up to a set maximum
+* **Add CPUs**		- Dynamically add CPUs to guests up to a set maximum
 
-* **Remove CPUs    	**Dynamically remove CPUs from guests down to one
+* **Remove CPUs**	- Dynamically remove CPUs from guests down to one
 
-* **Add memory      	**Dynamically add memory to running guests
+* **Add memory**	- Dynamically add memory to running guests
 
-* **Remove memory	**Dynamically remove memory from running guests
+* **Remove memory**	- Dynamically remove memory from running guests
 
-* **Capping/SHARE	**Dynamically change SHARE settings (capping, etc)
+* **Capping/SHARE**	- Dynamically change SHARE settings (capping, etc)
 
-* **Add/expand disk	**Minidisks/EDEV/DASD
+* **Add/expand disk**	- Minidisks/EDEV/DASD
 
-* **Set group        	**Change the group running guests (for scope of view/control)
+* **Set group**		- Change the group running guests (for scope of view/control)
 
 Operations to **Reporting** on guests are as follow:
 
-* **System details        **Report on all aspects of selected systems
+* **System details**	- Report on all aspects of selected systems
 
-* **System expirations	**Report on when selected systems expire
+* **System expirations**- Report on when selected systems expire
 
-* **Capacity reporting 	**Point to ES Capacity Planning guest
+* **Capacity reporting**- Point to ES Capacity Planning guest
 
-* **LIST			**Simple listing of all existing guests
+* **LIST**		- Simple listing of all existing guests
 
  
 
@@ -208,4 +208,3 @@ On success header will contain
 "auth-token":”string...”
 
 Well, I gave it a start… quite a lot more to go. James V
-
