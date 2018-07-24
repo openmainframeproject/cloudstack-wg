@@ -1,3 +1,5 @@
+**Currently in DRAFT at https://docs.google.com/document/d/1NGAvEI6KyQ9efBYXNHDfHwgdXhFzKIkqYn9G_Kw1w5M/edit?usp=sharing - this will be updated once the group finalizes the work in the aforementioned doc**
+
 **Open Mainframe Project**
 
 Following is the vision and mission of the Open Mainframe Project (OMP).
